@@ -166,6 +166,12 @@ a.dark-btn {
     background: #1ABA9D;
     color: #f5f5f5;
     display: inline-block;
+    border: 1.8px solid #1ABA9D;
+}
+a.dark-btn:hover {
+    background: #ffffff00;
+    color: #bbb;
+    border-color:#ffffff52 ;
 }
 
 a.btn {
@@ -174,6 +180,11 @@ a.btn {
     border: 1.8px solid #ffffff52;
     display: inline-block;
     color: #bbb;
+}
+a.btn:hover {
+    background: #1aba9d;
+    color: #fff;
+    border-color: #1aba9d;
 }
 .banner-buttons .btn{
     margin-left: 25px;
