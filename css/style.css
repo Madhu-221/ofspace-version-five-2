@@ -80,9 +80,64 @@ header {
     line-height: 21px;
     color: #fff;
 }
-img#menu {
+#hamburger-icon {
+    margin: auto 0;
     display: none;
-}
+    cursor: pointer;
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    height: 160px;
+    width: 100%;
+    background: #1aba9d;
+    z-index: 1;
+    padding: 20px 0px;
+  }
+  li.nav-btn {
+    padding: 3px 20px !important;
+  }
+  .nav-btn {
+    margin: 8px 0px !important;
+  }
+  #hamburger-icon div {
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  #hamburger-icon .bar2{
+    width: 18px;
+    margin-left: 5px;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-3px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  .mobile-menu li a:hover {
+    color: #0d0d0d;
+  }
 /*  Banner section*/
 
 section.banner-section {
@@ -99,12 +154,12 @@ section.banner-section {
 }
 .banner-contant {
     width: 36%;
-    padding: 220px 0px 240px 0px;
+    padding: 220px 0px 170px 0px;
 }
 .banner-image img {
     position: absolute;
     right: 0px;
-    top: 25%;
+    top: 21%;
 }
 a.dark-btn {
     padding: 20px 36px;
@@ -126,7 +181,7 @@ a.btn {
 
 /*Services-image-boxes */
 section.crypto-services {
-    padding: 100px 0px 70px 0px;
+    padding: 190px 0px 70px 0px;
 }
 .image-box {
     padding: 50px 70px ;
@@ -159,6 +214,9 @@ section.crypto-services {
 }
 
 /* Coins Market Section */
+.coin-market {
+    padding: 70px 0px 50px 0px;
+  }
 .coins-markart-content, .mobile-app-content {
     width: 46%;
     padding-right: 100px;
@@ -227,7 +285,7 @@ section.revolution {
 }
 .innovation-heading-row {
     text-align: center;
-    padding: 0px 180px;
+    padding: 40px 180px 0px 180px;
 }
 .innovation-heading-row p{
     padding: 12px 0px;
@@ -380,7 +438,7 @@ ul.footer-menu-list-ver li a {
         padding: 5px 0px 14px 0px;
     }
     .mobile-app {
-        margin-top: -180px;
+        margin-top: -100px;
         padding-top: 60px;
         background-size: contain;
     }
@@ -388,7 +446,7 @@ ul.footer-menu-list-ver li a {
         margin-bottom: -55px;
     }
     section.revolution {
-        background-color: #F8F8F8EE;
+        background-color: #13181D;
         padding: 120px 0px 80px 0px;
         background-repeat: no-repeat;
     }
@@ -412,7 +470,7 @@ ul.footer-menu-list-ver li a {
         padding: 60px 40px 0px 40px;
     }
     .create-account.row {
-        background: #F8F8F8;
+        background: #202A32;
         padding: 8px 10px 15px 0px;
     }
     h3 {
@@ -422,6 +480,10 @@ ul.footer-menu-list-ver li a {
     .create-account-content {
         padding-left: 20px;
     }
+    .create-account-image img {
+        height: 176px;
+        object-fit: cover;
+      }
     h4 {
         font-size: 22px;
     }
@@ -455,6 +517,9 @@ ul.footer-menu-list-ver li a {
         padding: 5px;
         line-height: 28px;
     }
+    .revolution-heading {
+        width: 37%;
+      }
     img#menul:hover,  .nav-menu{
         display: block;
     }
@@ -462,6 +527,10 @@ ul.footer-menu-list-ver li a {
         top: 26%;
         width: 52%;
     }
+    .create-account-image img {
+        height: 176px;
+        object-fit: cover;
+      }
     h1 {
         font-size: 34px;
         line-height: 45px;
@@ -502,7 +571,22 @@ ul.footer-menu-list-ver li a {
     }
     section.crypto-services {
         padding: 45px 0px 50px 0px;
-    }
+    }#hamburger-icon {
+        display: block;
+      }
+      .mobile-menu li a {
+        font-size: 16px;
+        line-height: 28px;
+        color: #fff;
+        padding-bottom: 10px;
+      }
+      .mobile-menu {
+        height: 225px;
+        padding: 25px 0px;
+      }
+      .mobile-menu li {
+        padding-bottom: 9px;
+      }
     .image-box {
         padding: 35px 20px;
     }
@@ -595,6 +679,15 @@ ul.footer-menu-list-ver li a {
     .container{
         width: 90%;
     }
+    
+  #hamburger-icon {
+    display: block;
+  }
+  .mobile-menu li a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+  }
     ul.nav-menu {
         flex-direction: column;
         width: 100%;
